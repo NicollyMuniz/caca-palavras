@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça-Palavras</title>
+</head>
+<body>
+    <div class="title">
+        Caça-Palavras
+    </div>
+    <div class="subt">
+        Adidas - Chanel - Dior - Fendi - Gucci - Nike - Prada - Rolex - Valentino - Versace
+    </div>
+
+    <table border="2" width="700" height="400">
+        <script>
+
+            x = new Array;
+            x = [["D", "I", "G", "U", "C", "C", "I", "F", "J", "P"], ["I", "N", "I", "K", "E", "A", "G", "H", "K", "R"], ["O", "A", "D", "C", "H", "A", "N", "E", "L", "A"], ["R", "J", "D", "U", "C", "E", "R", "T", "C", "D"], ["V", "E", "R", "S", "A", "C", "E", "A", "M", "A"], ["A", "D", "I", "D", "A", "S", "O", "R", "B", "I"], ["R", "O", "L", "E", "X", "F", "E", "N", "D", "I"], ["B", "U", "A", "V", "H", "A", "G", "V", "R", "C"], ["V", "A", "L", "E", "N", "T", "I", "N", "O", "N"], ["R", "O", "F", "I", "E", "S", "T", "D", "G", "X"]]
+
+            binario = new Array;
+            binario = [[1,0,1,1,1,1,1,0,0,1], [1,1,1,1,1,0,0,0,0,1], [1,0,0,1,1,1,1,1,1,1], [1,0,0,0,0,0,0,0,0,1], [1,1,1,1,1,1,1,0,0,1], [1,1,1,1,1,1,0,0,0,0], [1,1,1,1,1,1,1,1,1,1], [0,0,0,0,0,0,0,0,0,0], [1,1,1,1,1,1,1,1,1,0], [0,0,0,0,0,0,0,0,0,0]]
+
+            for(linha=0; linha<10; linha++){
+            document.write("<tr>");
+                for(coluna=0; coluna<10; coluna++){
+                    if(binario[linha][coluna]==1){
+                        document.write("<td bgcolor='#324900'>" + x [linha][coluna] + "</td>");
+                    }
+                    else{
+                        document.write("<td align='center'>" + x[linha][coluna] + "</td>");
+                    }
+                }
+                document.write("</tr>");
+            }
+            
+        </script>
+    </table>
+</body>
+</html>

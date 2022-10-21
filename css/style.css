@@ -1,0 +1,27 @@
+body{
+    background-color: #bea000;
+    position: relative;
+}
+.title{
+    color: #ffffff;
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+.subt{
+    color: #ffffff;
+    top: 35px;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+table{
+    left: 320px;
+    top: 70px;
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
